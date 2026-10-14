@@ -1,0 +1,9 @@
+
+services:
+  regression-api:
+    build: .
+    image: shayanmalik99/regression-api:latest
+    container_name: regression-api
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
